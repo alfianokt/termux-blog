@@ -6,6 +6,9 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore"
   },
+  "now": {
+    "alias": "termux"
+  },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/remark-prismjs": "^0.2.0",
