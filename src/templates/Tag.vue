@@ -42,16 +42,16 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: this.$route.params.id,
+    title: "Tag",
     meta: [
       {
         name: 'description',
-        content: `Posts with tag ${this.$route.params.id}`
+        content: 'Search posts with a tag.'
       }
     ],
     ...this.$ogp({
-      title: this.$route.params.id,
-      description: `Posts with tag ${this.$route.params.id}`,
+      title: "Tag",
+      description: 'Search posts with a tag.',
       image: '~/assets/images/undraw_code_review_l1q9.png'
     })
 }
