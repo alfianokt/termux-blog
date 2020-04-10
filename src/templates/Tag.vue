@@ -42,16 +42,16 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: this.$page.tag.title,
+    title: $page.tag.title,
     meta: [
       {
         name: 'description',
-        content: `Posts with tag ${this.$page.tag.title}`
+        content: `Posts with tag ${$page.tag.title}`
       }
     ],
     ...this.$ogp({
-      title: this.$page.tag.title,
-      description: `Posts with tag ${this.$page.tag.title}`,
+      title: $page.tag.title,
+      description: `Posts with tag ${$page.tag.title}`,
       image: '~/assets/images/undraw_code_review_l1q9.png'
     })
 }
