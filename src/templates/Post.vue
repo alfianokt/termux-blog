@@ -15,9 +15,6 @@
       </div>
 
       <div class="post__content" v-html="$page.post.content" />
-      <div class="post__content">
-        {{$page.post}}
-      </div>
       <div class="post__footer">
         <PostTags :post="$page.post" />
       </div>
@@ -54,7 +51,7 @@ export default {
       ...this.$ogp({
         title: this.$page.post.title,
         description: this.$page.post.description,
-        image: this.$page.post.cover_image,
+        image: this.$page.post.cover_image.src,
     })
     }
   }
