@@ -15,7 +15,9 @@
       </div>
 
       <div class="post__content" v-html="$page.post.content" />
-
+      <div class="post__content">
+        {{$page.post}}
+      </div>
       <div class="post__footer">
         <PostTags :post="$page.post" />
       </div>
