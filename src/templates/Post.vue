@@ -51,7 +51,7 @@ export default {
       ...this.$ogp({
         title: this.$page.post.title,
         description: this.$page.post.description,
-        image: this.$page.post.cover_image.src,
+        image: this.$page.post.cover_image ? this.$page.post.cover_image.src : '',
     })
     }
   }
