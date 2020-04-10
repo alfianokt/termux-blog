@@ -51,7 +51,7 @@ export default {
       ...this.$ogp({
         title: this.$page.post.title,
         description: this.$page.post.description,
-        image: this.$page.post.cover_image ? this.$page.post.cover_image.src : '',
+        image: `https://og-image.now.sh/${encodeURIComponent(this.$page.post.title)}.png`, // todo change it with own logo
     })
     }
   }
