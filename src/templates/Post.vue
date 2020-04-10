@@ -48,7 +48,12 @@ export default {
           name: 'description',
           content: this.$page.post.description
         }
-      ]
+      ],
+      ...this.$ogp({
+        title: this.$page.tag.title,
+        description: this.$page.post.description,
+        image: this.$page.post.cover_image,
+    })
     }
   }
 }

@@ -42,7 +42,20 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: 'Hello, world!'
+    return {
+      title: this.$page.tag.title,
+      meta: [
+        {
+          name: 'description',
+          content: `Posts with tag ${this.$page.tag.title}`
+        }
+      ],
+      ...this.$ogp({
+        title: this.$page.tag.title,
+        description: `Posts with tag ${this.$page.tag.title}`,
+        image: '~/assets/images/undraw_code_review_l1q9.png'
+      })
+    }
   }
 }
 </script>
