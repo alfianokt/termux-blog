@@ -48,12 +48,7 @@ export default {
         name: 'description',
         content: 'Search posts with a tag.'
       }
-    ],
-    ...this.$ogp({
-      title: "Tag",
-      description: 'Search posts with a tag.',
-      image: '~/assets/images/undraw_code_review_l1q9.png'
-    })
+    ]
 }
 }
 </script>
